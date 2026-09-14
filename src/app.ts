@@ -6,6 +6,7 @@ import authRouter from './routes/auth.routes.js';
 import usersRouter from './routes/users.routes.js';
 
 // App initialization
+
 const app = express();
 
 // Middlewares
@@ -13,7 +14,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(requestLogger);
 
-// Routes
+// Route
 app.use('/auth', authRouter);
 app.use('/users', usersRouter);
 
